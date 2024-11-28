@@ -1,3 +1,5 @@
+import { LayoutGridDemo } from "@/components/LayoutGridDemo";
+
 export default function ProjectsPage() {
     return (
       <div className="bg-gray-50">
@@ -12,56 +14,7 @@ export default function ProjectsPage() {
         </section>
   
         {/* Featured Projects Section */}
-        <section className="py-16 sm:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer">
-                <div className="relative">
-                  <img
-                    src="/path/to/project-image1.jpg"
-                    alt="Project 1"
-                    className="w-full h-56 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Modern Sofa Set</h3>
-                  <p className="text-gray-600">A sleek and stylish sofa set designed for modern living rooms.</p>
-                </div>
-              </div>
-  
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer">
-                <div className="relative">
-                  <img
-                    src="/path/to/project-image2.jpg"
-                    alt="Project 2"
-                    className="w-full h-56 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Rustic Dining Table</h3>
-                  <p className="text-gray-600">A handcrafted dining table made with reclaimed wood for a rustic charm.</p>
-                </div>
-              </div>
-  
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer">
-                <div className="relative">
-                  <img
-                    src="/path/to/project-image3.jpg"
-                    alt="Project 3"
-                    className="w-full h-56 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Bookshelf</h3>
-                  <p className="text-gray-600">A unique and personalized bookshelf built to fit any space perfectly.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <LayoutGridDemo/>
   
         {/* Call to Action Section */}
         <section className="py-16 sm:py-24 bg-blue-600 text-white text-center">

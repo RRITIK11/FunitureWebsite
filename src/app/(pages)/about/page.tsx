@@ -1,3 +1,5 @@
+import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo";
+
 export default function AboutPage() {
     return (
       <div className="bg-gray-50">
@@ -32,7 +34,7 @@ export default function AboutPage() {
         </section>
   
         {/* Our Values Section */}
-        <section className="py-16 sm:py-24 bg-gray-100">
+        {/* <section className="py-16 sm:py-24 bg-gray-100">
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
             <h2 className="text-3xl font-semibold text-center text-gray-900 mb-6">Our Core Values</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -65,7 +67,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
   
         {/* Team Section */}
         <section className="py-16 sm:py-24 bg-white text-center">
@@ -74,28 +76,10 @@ export default function AboutPage() {
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               Our team is made up of passionate designers, craftsmen, and experts who are committed to bringing your vision to life. Each member brings a unique set of skills to the table, ensuring that every project is completed with precision and care.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-              {/* Team Member 1 */}
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
-                <h3 className="text-xl font-semibold text-gray-900">John Doe</h3>
-                <p className="text-gray-600">Lead Designer</p>
-              </div>
-  
-              {/* Team Member 2 */}
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
-                <h3 className="text-xl font-semibold text-gray-900">Jane Smith</h3>
-                <p className="text-gray-600">Head Craftsman</p>
-              </div>
-  
-              {/* Team Member 3 */}
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
-                <h3 className="text-xl font-semibold text-gray-900">Tom Brown</h3>
-                <p className="text-gray-600">Furniture Restoration Expert</p>
-              </div>
-            </div>
+            <AnimatedTestimonialsDemo/>
+            
+           
+
           </div>
         </section>
   
@@ -113,4 +97,31 @@ export default function AboutPage() {
       </div>
     );
   }
+  
+
+// team member
+
+//   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+//   {/* Team Member 1 */}
+//   <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+//     <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
+//     <h3 className="text-xl font-semibold text-gray-900">John Doe</h3>
+//     <p className="text-gray-600">Lead Designer</p>
+//   </div>
+
+//   {/* Team Member 2 */}
+//   <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+//     <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
+//     <h3 className="text-xl font-semibold text-gray-900">Jane Smith</h3>
+//     <p className="text-gray-600">Head Craftsman</p>
+//   </div>
+
+//   {/* Team Member 3 */}
+//   <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+//     <div className="h-40 bg-gray-300 rounded-lg mb-4"></div>
+//     <h3 className="text-xl font-semibold text-gray-900">Tom Brown</h3>
+//     <p className="text-gray-600">Furniture Restoration Expert</p>
+//   </div>
+// </div>
+
   

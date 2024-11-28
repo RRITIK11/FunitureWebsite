@@ -1,7 +1,16 @@
+"use client"
+import { useEffect, useState } from 'react';
+import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import Link from 'next/link';
 
 export default function HomePage() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
+
     <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white py-16 sm:py-24 md:py-32">
@@ -39,11 +48,11 @@ export default function HomePage() {
       {/* Featured Projects Section */}
       <section className="py-16 sm:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 flex flex-col gap-5">
             <h2 className="text-3xl font-bold text-gray-900">Featured Projects</h2>
             <p className="text-lg text-gray-600">Explore our selection of handcrafted furniture projects that showcase the artistry and precision of our work.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <img
                 src="/path/to/project-image1.jpg"
@@ -86,9 +95,12 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
+        {isClient && <AppleCardsCarouselDemo />}  
         </div>
       </section>
+
+      {/* <AppleCardsCarouselDemo/> */}
 
       {/* CTA Section */}
       <section className="py-16 sm:py-24 bg-blue-600 text-white text-center">

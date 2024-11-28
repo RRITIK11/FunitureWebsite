@@ -1,3 +1,5 @@
+import { LensDemoThird } from "@/components/LensDemoThird";
+
 export default function ServicePage() {
     return (
       <div className="bg-gray-50">
@@ -16,7 +18,7 @@ export default function ServicePage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
               {/* Custom Furniture Design Service */}
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
+              {/* <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
                 <div className="relative">
                   <img
                     src="/path/to/service-image1.jpg"
@@ -29,10 +31,13 @@ export default function ServicePage() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Furniture Design</h3>
                   <p className="text-gray-600">Work with our expert designers to create unique, personalized furniture pieces that match your style and needs.</p>
                 </div>
-              </div>
+              </div> */}
+              <LensDemoThird/>
+              <LensDemoThird/>
+              <LensDemoThird/>
   
               {/* Furniture Restoration Service */}
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
+              {/* <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
                 <div className="relative">
                   <img
                     src="/path/to/service-image2.jpg"
@@ -45,10 +50,10 @@ export default function ServicePage() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Furniture Restoration</h3>
                   <p className="text-gray-600">Bring new life to your old furniture with our restoration services. We repair, refinish, and reupholster your beloved pieces.</p>
                 </div>
-              </div>
+              </div> */}
   
               {/* Furniture Assembly Service */}
-              <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
+              {/* <div className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition duration-300">
                 <div className="relative">
                   <img
                     src="/path/to/service-image3.jpg"
@@ -61,7 +66,8 @@ export default function ServicePage() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Furniture Assembly</h3>
                   <p className="text-gray-600">We offer expert furniture assembly services to save you time and effort, ensuring your pieces are set up correctly and securely.</p>
                 </div>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </section>
